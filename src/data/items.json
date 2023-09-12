@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Apple Watch",
+      "price": 300000,
+      "imgUrl": "/assets/apple watch.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Soccer Boots",
+      "price": 35000,
+      "imgUrl": "/assets/soccer boot.jpg"
+    },
+    {
+      "id": 3,
+      "name": "track Suit",
+      "price": 20000,
+      "imgUrl": "/assets/track suit.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Nike Benassi",
+      "price": 14000,
+      "imgUrl": "/assets/nike slides.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Laptop Bag",
+        "price": 6000,
+        "imgUrl": "/assets/laptop bag.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Nike Airforce 1",
+        "price": 34000,
+        "imgUrl": "/assets/nike airforce.jpg"
+    }
+]

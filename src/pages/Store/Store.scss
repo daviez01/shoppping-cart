@@ -1,0 +1,18 @@
+.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+    }
+}

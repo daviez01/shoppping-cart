@@ -1,0 +1,69 @@
+.card {
+    width: 30rem;
+    height: 40rem;
+    background-color: #f6f5f5;
+
+    img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .btn {
+        height: 1.5rem;
+        background-color: #002b6f;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .card-body {
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+
+            .price {
+                color: #696969;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .btn.add {
+                width: 80%;
+                height: 3rem;
+                padding: 0.5rem;
+                margin: auto;
+                font-size: 1.3rem;
+            }
+
+            .qty {
+                .quantity {
+    
+                    .btn {
+                        width: 2rem;
+                        margin: 10px;
+                    }
+                }
+
+                .btn.remove {
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 1rem;
+                    padding: 0.5rem;
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+}
