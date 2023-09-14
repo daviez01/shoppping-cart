@@ -6,7 +6,7 @@ import storeItems from '../../data/items.json'
 const Store = () => {
   return (
     <div className='store'>
-      this a store motherfucker
+      <h1>STORE</h1>
       <div className="container">
         {storeItems.map(item => (
         <div className='items' key={item.id}>

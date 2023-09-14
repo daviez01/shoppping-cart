@@ -9,7 +9,7 @@ type StoreItemsProps = {
 }
 
 const StoreItem = ({ id, price, name, imgUrl }: StoreItemsProps) => {
-  const quantity = 1
+  const quantity = 0
   return (
     <div className="card">
         <img src={imgUrl} alt="" />
