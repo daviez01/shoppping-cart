@@ -1,5 +1,7 @@
 import './StoreItem.scss'
 import formatCurrency from '../../utilities/FormatCurrency'
+import { useShoppingCart } from '../../context/ShoppingCartContext'
+
 
 type StoreItemsProps = {
     id: number;
@@ -9,7 +11,8 @@ type StoreItemsProps = {
 }
 
 const StoreItem = ({ id, price, name, imgUrl }: StoreItemsProps) => {
-  const quantity = 0
+  const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
+  const quantity = getItemQuantity(id);
   return (
     <div className="card">
         <img src={imgUrl} alt="" />
@@ -19,14 +22,14 @@ const StoreItem = ({ id, price, name, imgUrl }: StoreItemsProps) => {
             <span className='price'>{formatCurrency(price)}</span>
           </div>
           <div className='container'>
-            { quantity === 1 ? <button className='btn add'> + Add to Cart</button> :
+            { quantity === 0 ? <button className='btn add' onClick={() => increaseCartQuantity(id)}> + Add to Cart</button> :
             <div className='qty'>
                 <div className='quantity'>
-                  <button className='btn'>-</button>
+                  <button className='btn' onClick={() => decreaseCartQuantity(id)}>-</button>
                   <span>{quantity}</span> Added to Cart
-                  <button className='btn'>+</button>
+                  <button className='btn' onClick={() => increaseCartQuantity(id)}>+</button>
                 </div>
-                <button className="btn remove">Remove from Cart</button>
+                <button className="btn remove" onClick={() => removeFromCart(id)}>Remove from Cart</button>
             </div>
             }
           </div>
