@@ -3,6 +3,7 @@ import StoreItem from '../../components/StoreItem/StoreItem'
 import storeItems from '../../data/items.json'
 
 
+
 const Store = () => {
   return (
     <div className='store'>

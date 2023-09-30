@@ -1,0 +1,34 @@
+.cart-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    background-color: rgb(251, 251, 251);
+    padding: 0 30px;
+
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            font-size: 1.5rem;
+            border-radius: 100%;
+            border: 2px solid #eb9797;
+            cursor: pointer;
+        }
+    }
+
+    .body {
+        .total {
+        text-align: right;
+        font-weight: bolder;
+        }
+    }
+}
